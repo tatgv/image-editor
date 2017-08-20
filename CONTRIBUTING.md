@@ -7,7 +7,7 @@ https://github.com/lalwanivikas/image-editor
 2. Image fit to canvas size
 3. Save image as PNG, JPG, GIF functionality
 
-##Demo
+## Demo
 http://img-editor.byethost6.com/
 
 ## Notes
