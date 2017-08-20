@@ -198,13 +198,36 @@ input[type=range]:hover {
     margin: 0 10px 10px 0px;
     border: 2px solid transparent;
 }
+.btn {
+    display: inline-block;
+    padding-top: 20px;
+	height: 2.5rem;
+	width: 20%;
+    background-color: #22A7F0;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px 10px 0px;
+    border: 2px solid transparent;
+}
 
-#reset:hover {
+#reset:hover, .btn:hover {
     color: #22A7F0;
     background-color: #fff;
     border: 2px solid #22A7F0;
 }
-
-
-
-
+#file {
+    display: block;
+    margin-bottom: 20px;
+}
+#or{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+.buttons{
+    margin-top: 20px;
+}

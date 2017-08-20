@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Image Editor | Vikas Lalwani</title>
+		<title>Image Editor Bendiucov Tatiana</title>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 		<link href = "css/main.css" type="text/css" rel="stylesheet">
 	</head>
@@ -15,7 +15,11 @@
 			<form id="urlBox" class = "center">
 				<input class="url-box" type="url" id="imgUrl" placeholder="Paste any image link and hit enter to start playing.">
 			</form>
-
+           
+            <div id="or">OR</div>
+            
+            <input id="file" type="file" />
+            
 			<!--Controls for CSS filters via range input-->
 			<div class="sliders">
 				<form id="imageEditor">
@@ -71,21 +75,20 @@
 
 			<!--container where image will be loaded-->
 			<div id="imageContainer" class="center">
-				<img src="image/puppies.jpg"/>
+                <canvas id="image" width="630px" height="400px"></canvas>
 			</div>
+            
+            <div class="buttons">
+                <a class="btn save" target="_blank" data-type="png">Save as PNG</a>
+                <a class="btn save" target="_blank" data-type="jpg">Save as JPG</a>
+                <a class="btn save" target="_blank" data-type="gif">Save as GIF</a>
+            </div>
 		</div>
 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
 		
-		<!-- Google Analytics Tracking Code -->
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-			ga('create', 'UA-58515343-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+        
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+        
 	</body>
 </html>
